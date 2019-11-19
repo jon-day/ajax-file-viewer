@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Upload new File</title>
+<body>
+
+    <h1>Upload new File</h1>
+    
+    <form action="/test_route" id="upload-file" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <label for="file">Select a file</label>
+            <input name="file" type="file" id="myfile">
+        </fieldset>
+        <div id="detail">
+        </div>
+    </form>
+
+    <p><button type="button" id="testClick">Click Me!</button></p>
+    <div id="response">
+    </div>
+    <script src="{{url_for('static', filename='main.js')}}"></script>
+</body>
+</html>
