@@ -10,7 +10,6 @@ $(function() {
             processData: false,
             success: function(data) {
                 $("#detail").html(data);
-                console.log('success stuff');
             },
         });
     });
