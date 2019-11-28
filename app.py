@@ -28,7 +28,7 @@ def read_data():
         reader = csv.DictReader(io.StringIO(file.read().decode('utf-8-sig')))
         fieldnames = reader.fieldnames
         fileData = [row for row in reader]
-        return render_template("display_data.html", data=fieldnames)
+        return render_template("reveal and populate drop-downs.html", data=fieldnames)
     else:
         return "<h1>Wrong File Type. Please use a csv file.</h1>"
 
