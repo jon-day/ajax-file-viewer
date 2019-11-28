@@ -4,7 +4,7 @@ import csv
 
 from my_special_functions import my_special_func
 ALLOWED_EXTENSIONS = {'csv'}
-from werkzeug.utils import secure_filename
+
 
 app = Flask(__name__)
 app.debug = False
