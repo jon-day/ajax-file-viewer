@@ -7,7 +7,7 @@ ALLOWED_EXTENSIONS = {'csv'}
 from werkzeug.utils import secure_filename
 
 app = Flask(__name__)
-app.debug = True
+app.debug = False
 app.config['SECRET_KEY'] = 'supersicrit'
 app.config['MAX_CONTENT_LENGTH'] = 32 * 1024 * 1024
 
